@@ -189,4 +189,4 @@ If you would like to request a new feature or need help, then feel free to open 
 - [slog-slack](https://github.com/samber/slog-slack/tree/main) - for the logic to merge slog groups and attributes (both logger and record scopes)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
