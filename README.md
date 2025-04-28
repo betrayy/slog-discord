@@ -10,8 +10,12 @@ go get github.com/betrayy/slog-discord
 
 ### Notes
 - All slog attributes and groups will be included in Discord logs :)
-- Keep in mind that by default, logs are sent to Discord asynchronously. So if the program exits too early, the logs will not be sent.
+- Keep in mind that, by default, logs are sent to Discord asynchronously. So they may be sent out of order.
+  - If the program exits too early, the logs will not be sent. Set sync mode to fix this.
 - Uses [disgo](https://github.com/disgoorg/disgo/tree/master) under the hood to send Discord API requests and build Discord embeds.
+  - This also means that rate limiting is built-in.
+- You can configure to use a second slog handler alongside the Discord handler. That way, you are not just limited to Discord.
+  - You may consider using a multi-handler flow (separately) if you need to use multiple handlers.
 
 
 ### Requirements
@@ -174,8 +178,8 @@ If you would like to contribute, whether it is a suggestion or bug fix, please f
 4. Push to the branch - `git push origin feature/YourFeature`
 5. Open a pull request
 
-### Feature Requests
-If you would like to request a new feature, then feel free to open a new issue.
+### Feature Requests / Need Help?
+If you would like to request a new feature or need help, then feel free to open a new issue.
 
 ## Built With
 * [disgo](https://github.com/disgoorg/disgo/tree/master/webhook) - a Go wrapper for the Discord API
@@ -185,4 +189,4 @@ If you would like to request a new feature, then feel free to open a new issue.
 - [slog-slack](https://github.com/samber/slog-slack/tree/main) - for the logic to merge slog groups and attributes (both logger and record scopes)
 
 ## License
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
