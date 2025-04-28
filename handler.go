@@ -150,6 +150,12 @@ func (h *DiscordHandler) defaultBuildEmbed(record slog.Record, attrs []slog.Attr
 }
 
 func (h *DiscordHandler) populateEmbedFields(base string, attrs []slog.Attr, eb *discord.EmbedBuilder) {
+	// This function is adapted from slog-slack package
+	// Source: https://github.com/samber/slog-slack (MIT License)
+	// Copyright (c) Samuel Berthe
+	//
+	// Modifications made by R Ray
+
 	for _, attr := range attrs {
 		key := attr.Key
 		val := attr.Value
