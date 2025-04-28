@@ -1,6 +1,6 @@
 module github.com/betrayy/slog-discord
 
-go 1.23.0
+go 1.21
 
 require (
 	github.com/disgoorg/disgo v0.18.15
