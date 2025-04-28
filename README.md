@@ -1,4 +1,10 @@
 # slog-discord
+[![tag](https://img.shields.io/github/tag/betrayy/slog-discord.svg)](https://github.com/betrayy/slog-discord/releases)
+![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.21-%23007d9c)
+[![Go Reference](https://pkg.go.dev/badge/github.com/betrayy/slog-discord.svg)](https://pkg.go.dev/github.com/betrayy/slog-discord)
+[![Go report](https://goreportcard.com/badge/github.com/betrayy/slog-discord)](https://goreportcard.com/report/github.com/betrayy/slog-discord)
+[![License](https://img.shields.io/github/license/betrayy/slog-discord)](./LICENSE)
+
 A [slog](https://pkg.go.dev/log/slog) handler that sends logs to Discord through its [webhook API](https://discord.com/developers/docs/resources/webhook).
 
 ## Install
